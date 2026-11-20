@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="t" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="256" y2="256">
+      <stop offset="0" stop-color="#ff8a5b"/>
+      <stop offset="0.5" stop-color="#d9478a"/>
+      <stop offset="1" stop-color="#7a5cff"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#1b1442"/>
+  <g stroke="url(#t)" stroke-width="14" stroke-linecap="round">
+    <path d="M96 52V30M128 52V30M160 52V30M96 226V204M128 226V204M160 226V204M52 96H30M52 128H30M52 160H30M226 96H204M226 128H204M226 160H204"/>
+  </g>
+  <rect x="52" y="52" width="152" height="152" rx="26" fill="#241a5a" stroke="url(#t)" stroke-width="12"/>
+  <path d="M100 104H156C176 104 186 118 188 134C190 150 182 158 172 155C164 153 159 144 152 139H104C97 144 92 153 84 155C74 158 66 150 68 134C70 118 80 104 100 104Z" fill="#ff9a6b"/>
+  <g fill="#1b1442">
+    <rect x="82" y="124" width="22" height="7" rx="2"/>
+    <rect x="89.5" y="116.5" width="7" height="22" rx="2"/>
+    <circle cx="162" cy="121" r="5"/><circle cx="172" cy="131" r="5"/>
+    <circle cx="152" cy="131" r="5"/><circle cx="162" cy="141" r="5"/>
+  </g>
+</svg>

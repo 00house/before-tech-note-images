@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b1d5c"/>
+      <stop offset="0.45" stop-color="#b8487a"/>
+      <stop offset="0.75" stop-color="#f28a5b"/>
+      <stop offset="1" stop-color="#ffc77a"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a3a7a"/>
+      <stop offset="1" stop-color="#1e1840"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb46b"/>
+      <stop offset="1" stop-color="#c2477a"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2a4f"/>
+      <stop offset="1" stop-color="#1b1428"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky and sun -->
+  <rect width="1200" height="675" fill="url(#sky)"/>
+  <circle cx="600" cy="330" r="150" fill="#ffd98a" opacity="0.9"/>
+  <g fill="url(#sky)">
+    <rect x="440" y="300" width="320" height="8"/>
+    <rect x="440" y="325" width="320" height="10"/>
+    <rect x="440" y="352" width="320" height="12"/>
+    <rect x="440" y="381" width="320" height="14"/>
+  </g>
+  <rect y="400" width="1200" height="275" fill="url(#sea)"/>
+  <g fill="#ffd98a" opacity="0.35">
+    <rect x="520" y="415" width="160" height="4" rx="2"/>
+    <rect x="545" y="432" width="110" height="4" rx="2"/>
+    <rect x="565" y="449" width="70" height="4" rx="2"/>
+  </g>
+
+  <!-- palm trees -->
+  <g fill="#1a1230">
+    <path d="M128 420 C 140 330, 150 260, 175 190 L 186 194 C 166 262, 158 332, 150 420 Z"/>
+    <g transform="translate(180 190)">
+      <path d="M0 0 C -40 -30, -90 -30, -130 0 C -90 -15, -45 -10, 0 0 Z"/>
+      <path d="M0 0 C -30 -50, -70 -70, -110 -60 C -70 -45, -35 -25, 0 0 Z"/>
+      <path d="M0 0 C 20 -55, 60 -75, 100 -70 C 60 -50, 30 -30, 0 0 Z"/>
+      <path d="M0 0 C 45 -25, 95 -20, 135 10 C 90 -5, 45 -5, 0 0 Z"/>
+      <path d="M0 0 C 30 10, 60 40, 70 85 C 45 50, 25 25, 0 0 Z"/>
+      <path d="M0 0 C -25 15, -50 45, -55 90 C -35 55, -18 28, 0 0 Z"/>
+    </g>
+    <path d="M1060 420 C 1050 345, 1040 290, 1015 235 L 1025 231 C 1052 288, 1064 344, 1074 420 Z"/>
+    <g transform="translate(1020 233)">
+      <path d="M0 0 C 40 -30, 85 -28, 120 0 C 85 -14, 42 -10, 0 0 Z"/>
+      <path d="M0 0 C 25 -45, 65 -62, 100 -55 C 62 -42, 30 -22, 0 0 Z"/>
+      <path d="M0 0 C -22 -48, -60 -66, -95 -60 C -58 -44, -28 -24, 0 0 Z"/>
+      <path d="M0 0 C -42 -22, -88 -18, -120 8 C -82 -6, -42 -6, 0 0 Z"/>
+      <path d="M0 0 C -26 12, -50 40, -58 78 C -38 46, -20 22, 0 0 Z"/>
+      <path d="M0 0 C 24 14, 46 42, 50 80 C 34 48, 18 24, 0 0 Z"/>
+    </g>
+  </g>
+
+  <!-- desk -->
+  <rect y="520" width="1200" height="155" fill="url(#desk)"/>
+  <rect y="520" width="1200" height="6" fill="#5a4470"/>
+
+  <!-- left: PC monitor and tower -->
+  <g>
+    <rect x="150" y="300" width="330" height="200" rx="14" fill="#14101f"/>
+    <rect x="164" y="314" width="302" height="172" rx="6" fill="url(#screen)"/>
+    <g fill="#1a1230" opacity="0.55">
+      <path d="M200 486 C 205 440, 212 410, 225 380 L 231 382 C 220 412, 213 442, 210 486 Z"/>
+      <path d="M228 381 C 210 368, 188 368, 170 380 C 190 374, 210 375, 228 381 Z"/>
+      <path d="M228 381 C 240 364, 262 360, 282 368 C 262 368, 244 372, 228 381 Z"/>
+      <path d="M228 381 C 222 362, 208 350, 192 348 C 208 356, 220 366, 228 381 Z"/>
+    </g>
+    <rect x="290" y="500" width="50" height="22" fill="#14101f"/>
+    <rect x="250" y="516" width="130" height="10" rx="5" fill="#14101f"/>
+    <rect x="70" y="330" width="62" height="192" rx="8" fill="#14101f"/>
+    <circle cx="101" cy="356" r="6" fill="#ffb46b"/>
+    <rect x="82" y="380" width="38" height="4" rx="2" fill="#3a2f55"/>
+    <rect x="82" y="392" width="38" height="4" rx="2" fill="#3a2f55"/>
+    <rect x="200" y="540" width="230" height="34" rx="6" fill="#0f0c18"/>
+    <g fill="#2a2240">
+      <rect x="210" y="548" width="210" height="6" rx="2"/>
+      <rect x="210" y="560" width="210" height="6" rx="2"/>
+    </g>
+  </g>
+
+  <!-- right: generic console and controller -->
+  <g>
+    <rect x="760" y="300" width="96" height="222" rx="20" fill="#f4eef8"/>
+    <rect x="760" y="370" width="96" height="8" fill="#d9cfe5"/>
+    <rect x="770" y="506" width="76" height="6" rx="3" fill="#c9bfd6"/>
+    <circle cx="784" cy="330" r="5" fill="#7fd3ff"/>
+    <rect x="890" y="380" width="170" height="142" rx="20" fill="#f4eef8"/>
+    <rect x="890" y="440" width="170" height="10" fill="#d9cfe5"/>
+    <circle cx="1040" cy="400" r="5" fill="#7fd3ff"/>
+
+    <g transform="translate(860 560)">
+      <path d="M40 0 H 200 C 240 0, 262 28, 268 62 C 274 96, 256 112, 236 106 C 218 100, 206 80, 190 70 H 50 C 34 80, 22 100, 4 106 C -16 112, -34 96, -28 62 C -22 28, 0 0, 40 0 Z" fill="#f4eef8"/>
+      <rect x="22" y="26" width="38" height="12" rx="3" fill="#1a1230"/>
+      <rect x="35" y="13" width="12" height="38" rx="3" fill="#1a1230"/>
+      <circle cx="196" cy="20" r="8" fill="#1a1230"/>
+      <circle cx="214" cy="38" r="8" fill="#1a1230"/>
+      <circle cx="178" cy="38" r="8" fill="#1a1230"/>
+      <circle cx="196" cy="56" r="8" fill="#1a1230"/>
+      <circle cx="92" cy="54" r="14" fill="#1a1230"/>
+      <circle cx="148" cy="54" r="14" fill="#1a1230"/>
+    </g>
+  </g>
+</svg>

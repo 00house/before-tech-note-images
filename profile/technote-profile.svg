@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0" stop-color="#2a1f5c"/>
+      <stop offset="1" stop-color="#0d0a1f"/>
+    </radialGradient>
+    <linearGradient id="trace" gradientUnits="userSpaceOnUse" x1="100" y1="100" x2="700" y2="700">
+      <stop offset="0" stop-color="#ff8a5b"/>
+      <stop offset="0.5" stop-color="#d9478a"/>
+      <stop offset="1" stop-color="#7a5cff"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a2d7a"/>
+      <stop offset="1" stop-color="#1a1440"/>
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffe3b0"/>
+      <stop offset="0.45" stop-color="#ff9a6b"/>
+      <stop offset="1" stop-color="#d9478a"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg)"/>
+
+  <!-- faint grid -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="2">
+    <path d="M0 100H800M0 200H800M0 300H800M0 400H800M0 500H800M0 600H800M0 700H800"/>
+    <path d="M100 0V800M200 0V800M300 0V800M400 0V800M500 0V800M600 0V800M700 0V800"/>
+  </g>
+
+  <!-- circuit traces -->
+  <g fill="none" stroke="url(#trace)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M330 270 V200 L270 140 H160"/>
+    <path d="M400 270 V110"/>
+    <path d="M470 270 V200 L530 140 H640"/>
+    <path d="M330 530 V600 L270 660 H160"/>
+    <path d="M400 530 V690"/>
+    <path d="M470 530 V600 L530 660 H640"/>
+    <path d="M270 330 H200 L140 270 V180"/>
+    <path d="M270 400 H110"/>
+    <path d="M270 470 H200 L140 530 V620"/>
+    <path d="M530 330 H600 L660 270 V180"/>
+    <path d="M530 400 H690"/>
+    <path d="M530 470 H600 L660 530 V620"/>
+  </g>
+  <g fill="#0d0a1f" stroke="url(#trace)" stroke-width="8">
+    <circle cx="160" cy="140" r="16"/><circle cx="400" cy="110" r="16"/><circle cx="640" cy="140" r="16"/>
+    <circle cx="160" cy="660" r="16"/><circle cx="400" cy="690" r="16"/><circle cx="640" cy="660" r="16"/>
+    <circle cx="140" cy="180" r="16"/><circle cx="110" cy="400" r="16"/><circle cx="140" cy="620" r="16"/>
+    <circle cx="660" cy="180" r="16"/><circle cx="690" cy="400" r="16"/><circle cx="660" cy="620" r="16"/>
+  </g>
+
+  <!-- chip -->
+  <g filter="url(#glow)">
+    <rect x="260" y="260" width="280" height="280" rx="36" fill="url(#chip)" stroke="url(#trace)" stroke-width="10"/>
+  </g>
+  <rect x="300" y="300" width="200" height="200" rx="22" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="4"/>
+
+  <!-- core: small gamepad silhouette glowing -->
+  <g filter="url(#glow)">
+    <path d="M345 365 H455 C487 365 503 388 507 414 C511 440 499 452 484 448 C471 444 463 430 452 422 H348 C337 430 329 444 316 448 C301 452 289 440 293 414 C297 388 313 365 345 365 Z" fill="url(#core)"/>
+  </g>
+  <g fill="#1a1440">
+    <rect x="322" y="392" width="30" height="9" rx="3"/>
+    <rect x="332" y="382" width="10" height="29" rx="3"/>
+    <circle cx="462" cy="388" r="6"/><circle cx="476" cy="402" r="6"/>
+    <circle cx="448" cy="402" r="6"/><circle cx="462" cy="416" r="6"/>
+  </g>
+</svg>

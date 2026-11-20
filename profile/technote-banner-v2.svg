@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="900" viewBox="0 0 2400 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b1442"/>
+      <stop offset="0.6" stop-color="#140f30"/>
+      <stop offset="1" stop-color="#0c0920"/>
+    </linearGradient>
+    <radialGradient id="glowL" cx="12%" cy="40%" r="40%">
+      <stop offset="0" stop-color="#d9478a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#d9478a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowR" cx="88%" cy="55%" r="40%">
+      <stop offset="0" stop-color="#7a5cff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#7a5cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="trace" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="2400" y2="900">
+      <stop offset="0" stop-color="#ff8a5b"/>
+      <stop offset="0.5" stop-color="#d9478a"/>
+      <stop offset="1" stop-color="#7a5cff"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="2400" height="900" fill="url(#bg)"/>
+  <rect width="2400" height="900" fill="url(#glowL)"/>
+  <rect width="2400" height="900" fill="url(#glowR)"/>
+
+  <!-- faint grid -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="2">
+    <path d="M0 100H2400M0 200H2400M0 300H2400M0 400H2400M0 500H2400M0 600H2400M0 700H2400M0 800H2400"/>
+    <path d="M100 0V900M200 0V900M300 0V900M400 0V900M500 0V900M600 0V900M700 0V900M800 0V900M900 0V900M1000 0V900M1100 0V900M1200 0V900M1300 0V900M1400 0V900M1500 0V900M1600 0V900M1700 0V900M1800 0V900M1900 0V900M2000 0V900M2100 0V900M2200 0V900M2300 0V900"/>
+  </g>
+
+  <!-- left circuit cluster -->
+  <g fill="none" stroke="url(#trace)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" filter="url(#soft)">
+    <path d="M0 180 H180 L260 260 H420 L480 320 H600"/>
+    <path d="M0 300 H120 L200 380 H340"/>
+    <path d="M0 460 H240 L300 400 H460 L540 480 H660"/>
+    <path d="M0 600 H160 L240 680 H420"/>
+    <path d="M0 760 H300 L360 700 H520"/>
+    <path d="M140 0 V90 L220 170"/>
+    <path d="M380 0 V120 L440 180 H560"/>
+    <path d="M300 900 V820 L380 740 H480"/>
+  </g>
+  <g fill="#0c0920" stroke="url(#trace)" stroke-width="6" opacity="0.9">
+    <circle cx="600" cy="320" r="11"/><circle cx="340" cy="380" r="11"/><circle cx="660" cy="480" r="11"/>
+    <circle cx="420" cy="680" r="11"/><circle cx="520" cy="700" r="11"/><circle cx="220" cy="170" r="11"/>
+    <circle cx="560" cy="180" r="11"/><circle cx="480" cy="740" r="11"/>
+  </g>
+  <g>
+    <rect x="200" y="470" width="70" height="70" rx="10" fill="#1d1650" stroke="url(#trace)" stroke-width="5" opacity="0.9"/>
+    <rect x="440" y="560" width="54" height="54" rx="8" fill="#1d1650" stroke="url(#trace)" stroke-width="5" opacity="0.8"/>
+  </g>
+
+  <!-- right circuit cluster -->
+  <g fill="none" stroke="url(#trace)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" filter="url(#soft)">
+    <path d="M2400 160 H2240 L2160 240 H1980 L1920 300 H1800"/>
+    <path d="M2400 320 H2280 L2200 400 H2060"/>
+    <path d="M2400 470 H2160 L2100 410 H1940 L1860 490 H1740"/>
+    <path d="M2400 620 H2240 L2160 700 H1980"/>
+    <path d="M2400 780 H2100 L2040 720 H1880"/>
+    <path d="M2260 0 V90 L2180 170"/>
+    <path d="M2020 0 V110 L1960 170 H1840"/>
+    <path d="M2100 900 V830 L2020 750 H1920"/>
+  </g>
+  <g fill="#0c0920" stroke="url(#trace)" stroke-width="6" opacity="0.9">
+    <circle cx="1800" cy="300" r="11"/><circle cx="2060" cy="400" r="11"/><circle cx="1740" cy="490" r="11"/>
+    <circle cx="1980" cy="700" r="11"/><circle cx="1880" cy="720" r="11"/><circle cx="2180" cy="170" r="11"/>
+    <circle cx="1840" cy="170" r="11"/><circle cx="1920" cy="750" r="11"/>
+  </g>
+  <g>
+    <rect x="2130" y="480" width="70" height="70" rx="10" fill="#1d1650" stroke="url(#trace)" stroke-width="5" opacity="0.9"/>
+    <rect x="1900" y="570" width="54" height="54" rx="8" fill="#1d1650" stroke="url(#trace)" stroke-width="5" opacity="0.8"/>
+  </g>
+
+
+  <!-- center network (visible on narrow phone screens) -->
+  <radialGradient id="dim" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#0c0920" stop-opacity="0.75"/>
+    <stop offset="1" stop-color="#0c0920" stop-opacity="0"/>
+  </radialGradient>
+  <g fill="none" stroke="url(#trace)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#soft)" opacity="0.9">
+    <path d="M760 40 H960 L1010 90 H1140"/>
+    <path d="M1640 40 H1440 L1390 90 H1260"/>
+    <path d="M880 0 V20 L920 60"/>
+    <path d="M1520 0 V20 L1480 60"/>
+    <path d="M700 330 H860 L910 380 H1080"/>
+    <path d="M1700 330 H1540 L1490 380 H1320"/>
+    <path d="M820 420 H980 L1020 460 H1200 L1240 420 H1580"/>
+  </g>
+  <g fill="none" stroke="url(#trace)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.35">
+    <path d="M840 150 H930 L970 190 H1050"/>
+    <path d="M1560 150 H1470 L1430 190 H1350"/>
+    <path d="M820 270 H900 L940 240 H1010"/>
+    <path d="M1580 270 H1500 L1460 240 H1390"/>
+  </g>
+  <g fill="#0c0920" stroke="url(#trace)" stroke-width="5" opacity="0.95">
+    <circle cx="1140" cy="90" r="9"/><circle cx="1260" cy="90" r="9"/>
+    <circle cx="920" cy="60" r="9"/><circle cx="1480" cy="60" r="9"/>
+    <circle cx="1080" cy="380" r="9"/><circle cx="1320" cy="380" r="9"/>
+    <circle cx="820" cy="420" r="9"/><circle cx="1580" cy="420" r="9"/>
+    <circle cx="760" cy="40" r="9"/><circle cx="1640" cy="40" r="9"/>
+  </g>
+  <ellipse cx="1200" cy="225" rx="420" ry="120" fill="url(#dim)"/>
+
+  <!-- small floating particles in middle, very subtle -->
+  <g fill="#ffffff" opacity="0.18">
+    <circle cx="820" cy="140" r="3"/><circle cx="1010" cy="760" r="3"/><circle cx="1380" cy="120" r="3"/>
+    <circle cx="1600" cy="780" r="3"/><circle cx="900" cy="620" r="2"/><circle cx="1500" cy="300" r="2"/>
+  </g>
+</svg>
